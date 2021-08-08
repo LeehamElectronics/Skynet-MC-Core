@@ -1,6 +1,7 @@
 package au.com.skynetmc.skynetcore;
 
 import au.com.skynetmc.skynetcore.commands.FeedCommand;
+import au.com.skynetmc.skynetcore.commands.GetStick;
 import au.com.skynetmc.skynetcore.commands.HealthCommand;
 import au.com.skynetmc.skynetcore.commands.MemeCommand;
 import au.com.skynetmc.skynetcore.events.PlayerEvents;
@@ -17,6 +18,7 @@ public final class SkynetCore extends JavaPlugin {
         getCommand("helth").setExecutor(new HealthCommand());
         getCommand("hungy").setExecutor(new FeedCommand());
         getCommand("meme").setExecutor(new MemeCommand());
+        getCommand("stick").setExecutor(new GetStick());
 
         ItemManager.init();
 

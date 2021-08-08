@@ -19,3 +19,6 @@ commands:
   meme:
     description: spawns a meme
     usage: /meme entity amount
+  stick:
+    description: Give Stick mmm
+    usage: /stick
