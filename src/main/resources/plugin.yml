@@ -1,0 +1,21 @@
+name: SkynetCore
+version: ${project.version}
+main: au.com.skynetmc.skynetcore.SkynetCore
+api-version: 1.17
+load: STARTUP
+authors: [ LDPrice ]
+description: This plugin is developed for use in the Skynet MC network. It runs specifically on all bukkit servers within the network, but not the proxy bungeecord server. This pluigin will server as the backbone for Skynet MC servers.
+website: skynetmc.com.au
+depend: [Vault, Essentials]
+commands:
+  helth:
+    description: Helas player to max helth
+    usage: /<command>
+    aliases: [dietcoke, upandgo]
+  hungy:
+    description: Feeds player
+    usage: /<command>
+    aliases: benandjerrys
+  meme:
+    description: spawns a meme
+    usage: /meme entity amount
