@@ -44,7 +44,7 @@ public class PlayerEvents implements Listener {
                 if (event.getItem().getItemMeta().equals(ItemManager.wand.getItemMeta())){
                     Player player = event.getPlayer();
                     // create explosion
-                    player.getWorld().createExplosion(player.getLocation(), 2.0f);
+                    player.getWorld().createExplosion(player.getLocation(), 2.0f, true, true);
                     player.sendMessage("§Hit me, hit me, hit me with your rythm stick");
                 }
             }

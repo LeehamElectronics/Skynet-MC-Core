@@ -1,10 +1,14 @@
 package au.com.skynetmc.skynetcore.items;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +31,17 @@ public class ItemManager {
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(meta);
         wand = item;
+
+        //shaped recipe
+        ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("rythmstick"), item);
+        sr.shape("B  ",
+                " S ",
+                "  S");
+        sr.setIngredient('B', Material.BLAZE_POWDER);
+        sr.setIngredient('S', Material.STICK);
+        Bukkit.getServer().addRecipe(sr);
+
+
     }
 
 }
